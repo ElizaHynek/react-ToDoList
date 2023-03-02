@@ -59,7 +59,7 @@ const List = props => {
       </header>
       <p className={styles.description}>Interesting things I want to check out</p>
       <div className={styles.columns}>
-        {columns.map(column => <Column key={column.id} title={column.title} icon={column.icon} cards={column.cards} action={addCard} />)}
+        {columns.map(column => <Column key={column.id} id={column.id} title={column.title} icon={column.icon} cards={column.cards} addC={addCard}/>)}
       </div>
       <ColumnForm columnId={props.id} action={addColumn} />
     </div>
