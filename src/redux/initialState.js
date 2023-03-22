@@ -13,25 +13,25 @@ const initialState = {
   ],
   columns: [
     {
-      id: '1',
+      id: 1,
       listId: '1',
       title: 'To Do',
       icon: 'list',
     },
     {
-      id: '2',
+      id: 2,
       listId: '1',
       title: 'In progress',
       icon: 'hourglass',
     },
     {
-      id: '3',
+      id: 3,
       listId: '1',
       title: 'Done',
       icon: 'check',
     },
     {
-      id: '4',
+      id: 4,
       listId: '2',
       title: 'Songs',
       icon: 'music',
@@ -39,12 +39,12 @@ const initialState = {
   ],
 
   cards: [
-    { id: '1', columnId: 1, title: 'This is Going to Hurt' },
-    { id: '2', columnId: 1, title: 'Interpreter of Maladies' },
-    { id: '3', columnId: 2, title: 'Harry Potter' },
-    { id: '4', columnId: 2, title: 'Star Wars' },
-    { id: '5', columnId: 3, title: 'The Witcher' },
-    { id: '6', columnId: 3, title: 'Skyrim' }
+    { id: 1, columnId: 1, title: 'This is Going to Hurt' },
+    { id: 2, columnId: 1, title: 'Interpreter of Maladies' },
+    { id: 3, columnId: 2, title: 'Harry Potter' },
+    { id: 4, columnId: 2, title: 'Star Wars' },
+    { id: 5, columnId: 3, title: 'The Witcher' },
+    { id: 6, columnId: 3, title: 'Skyrim' }
   ],
   
   searchString: '',

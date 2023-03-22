@@ -4,6 +4,7 @@ import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
 import { getColumnsByList, getListById } from '../../redux/store';
 import { useParams } from 'react-router-dom';
+import SearchForm from '../SearchForm/SearchForm';
 
 const List = () => {
 
@@ -18,13 +19,14 @@ const List = () => {
         <h1 className={styles.title}>{listData.title}</h1>
       </header>
       <p className={styles.description}>{listData.description}</p>
+      <SearchForm />
       <div className={styles.columns}>
         {columns.map(column => 
         <Column 
           key={column.id} 
           {...column} />)}
       </div>
-      <ColumnForm />
+      <ColumnForm listId={listId} />
     </div>
   );
 };
