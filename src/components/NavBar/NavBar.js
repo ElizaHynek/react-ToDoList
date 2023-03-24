@@ -9,10 +9,12 @@ const NavBar = () => {
         <div className={styles.nav}>
           <span className={styles.icon + ' fa fa-tasks' } />
           <ul className={styles.menu}>
-            <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}
-to="/">Home</NavLink></li>
-            <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/favorite">Favorite</NavLink></li>
-            <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/about">About</NavLink></li>
+            <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} 
+            to="/">Home</NavLink></li>
+            <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} 
+            to="/favorite">Favorite</NavLink></li>
+            <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} 
+            to="/about">About</NavLink></li>
           </ul>
         </div>
       </Container>
