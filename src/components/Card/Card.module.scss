@@ -12,22 +12,19 @@
   font-weight: bold;
 }
 
-.icon::before {
-  padding-right: $base-size;
-  vertical-align: middle;
-  position: relative;
-}
-
 .button {
   width: 17px;
   padding: 0;
   background-color: transparent;
   border-color: transparent;
 
+  .icon {
+    font-size: 16px;
+    margin-left: 5px;
+  }
 }
 
 .isActive {
-  opacity: 1;
   transform: scale(1.2);
-  color: blue;
+  color: rgb(119, 77, 235);
 }
