@@ -7,22 +7,22 @@ import { toggleCardFavorite } from '../../redux/store';
 
 const Card = props => {
 
-  //const cardId = props.cardId;
-  //const [favorite, setFavorite] = useState(props.isFavorite);
-
-
   const dispatch = useDispatch();
 
   const handleClick = e => {
     e.preventDefault();
-    //setFavorite(!favorite);
     dispatch(toggleCardFavorite(props.id));
-
-
   };
 
   return (
-    <li className={styles.cards}>{props.title}<button onClick={handleClick} className={clsx(styles.button, props.isFavorite && styles.isActive)}><i className={'fa fa-star-o'} /></button></li>
+    <li className={styles.cards}>
+      {props.title}
+      <button 
+        onClick={handleClick} 
+        className={clsx(styles.button, props.isFavorite && styles.isActive)}>
+        <i className={'fa fa-star-o'} />
+      </button>
+    </li>
   );
 };
 

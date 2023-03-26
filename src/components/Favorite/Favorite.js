@@ -1,12 +1,12 @@
 import PageTitle from '../PageTitle/PageTitle';
 import styles from './Favorite.module.scss';
 import { useSelector } from 'react-redux';
-import { getFilteredCards } from '../../redux/store';
+import { getFavoriteCard } from '../../redux/store';
 import Card from '../Card/Card';
 
 const Favorite = () => {
 
-  const cards = useSelector(getFilteredCards);
+  const cards = useSelector(getFavoriteCard);
 
   if (cards.length === 0) {
     return (
